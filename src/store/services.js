@@ -1,4 +1,11 @@
 import axios from "axios"
+import { NEW_CONNECTOR_9_OCT_SECRET } from "react-native-dotenv"
+const newConnectoroct = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/13031/storyboard/12023/",
+  params: { private_key: NEW_CONNECTOR_9_OCT_SECRET },
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const plugin = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
