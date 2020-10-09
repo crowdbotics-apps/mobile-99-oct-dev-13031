@@ -32,6 +32,7 @@ urlpatterns = [
     path("rest-auth/registration/", include("rest_auth.registration.urls")),
     path("home/", include("home.urls")),
     path("api/v1/", include("homejhgfjhg.api.v1.urls")),
+    path("homejhgfjhg/", include("homejhgfjhg.urls")),
 ]
 
 admin.site.site_header = "mobile 990 oct"
